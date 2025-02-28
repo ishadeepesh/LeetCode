@@ -1,7 +1,7 @@
-Given two strings s and t, return true if t is an anagram of s, and false otherwise.
-Example 1:
-Input: s = "anagram", t = "nagaram"
-Output: true
+# Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+# Example 1:
+# Input: s = "anagram", t = "nagaram"
+# Output: true
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
