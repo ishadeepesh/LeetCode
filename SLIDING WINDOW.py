@@ -65,5 +65,35 @@ class Solution:
 
         return minlength if minlength<float('inf') else 0
 
+
+Longest Substring with K Uniques
+# Given a string s, you need to print the size of the longest possible substring with exactly k unique characters. If no possible substring exists, print -1.
+# Examples:
+# Input: s = "aabacbebebe", k = 3
+# Output: 7
+# Explanation: "cbebebe" is the longest substring with 3 distinct characters.
+class Solution:
+
+    def longestKSubstr(self, s, k):
+        # code here
+        start=0
+        d={}
+        maxlength=0
+        
+        for r in range(len(s)):
+            if s[r] not in d:
+                d[s[r]]=0
+            d[s[r]]+=1
+            while len(d)>k:
+                l=s[start]
+                d[l]-=1
+                if d[l]==0:
+                    del d[l]
+                start+=1
+        
+            if r-start+1>maxlength and len(d)==k:
+                maxlength=r-start+1
+        return -1 if maxlength==0 else maxlength
+
        
 
