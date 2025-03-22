@@ -6,11 +6,11 @@ If no possible substring exists, return `-1`.
 
 ### **Example**
 #### **Input**
+#### **s = "aabacbebebe"**
+#### **k = 3**
+#### **Output: 7**
+#### **Explanation: "cbebebe" is the longest substring with 3 distinct characters.**
 ```python
-s = "aabacbebebe"
-k = 3
-Output: 7
-Explanation: "cbebebe" is the longest substring with 3 distinct characters.
 class Solution:
     def longestKSubstr(self, s: str, k: int) -> int:
         start = 0
