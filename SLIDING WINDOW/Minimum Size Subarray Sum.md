@@ -5,14 +5,13 @@ Given an array of positive integers `nums` and a positive integer `target`, retu
 If there is no such subarray, return `0` instead.
 
 ### **Example**
-#### **Input**
+#### **Input:**
+#### **target = 7**
+#### **nums = [2,3,1,2,4,3]**
+#### **Output: 2**
+#### **Explanation: The subarray [4,3] has the minimal length under the problem constraint.**
+
 ```python
-target = 7
-nums = [2,3,1,2,4,3]
-Output: 2
-Explanation: The subarray [4,3] has the minimal length under the problem constraint.
-
-
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         windowSum = 0
