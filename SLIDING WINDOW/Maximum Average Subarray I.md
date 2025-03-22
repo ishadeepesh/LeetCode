@@ -7,13 +7,12 @@ Any answer with a calculation error less than `10⁻⁵` will be accepted.
 
 ### **Example**
 #### **Input**
+#### **nums = [1,12,-5,-6,50,3]**
+#### **k = 4**
+#### **12.75000**
+#### **Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75**
+
 ```python
-nums = [1,12,-5,-6,50,3]
-k = 4
-12.75000
-Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75
-
-
 class Solution:
     def findMaxAverage(self, nums: List[int], k: int) -> float:
         currSum = sum(nums[:k])
